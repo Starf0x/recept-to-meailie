@@ -1,4 +1,11 @@
 <!doctype html><html lang="en"><meta charset="utf-8">
-<style>body{font:14px system-ui;width:280px;margin:12px}a{color:#e58325}.err{color:#c00}small{color:#777}</style>
-<body><b>Recipe to Mealie</b><p id="s">Importing…</p><small><a href="#" id="o">Options</a></small>
+<style>
+:root{--bg:#fff;--text:#222;--muted:#6b6b6b;--accent:#E58325;--err:#c62828}
+@media (prefers-color-scheme:dark){:root{--bg:#262422;--text:#eee;--muted:#a8a29b}}
+body{margin:0;width:300px;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{display:flex;align-items:center;gap:8px;padding:12px 14px;background:var(--accent);color:#fff;font-weight:700}header img{width:22px;height:22px;border-radius:5px;outline:1px solid #fff6}
+#s{padding:14px;margin:0}.err{color:var(--err)}a{color:var(--accent);font-weight:600}small{color:var(--muted)}
+footer{padding:0 14px 12px}
+</style>
+<body><header><img src="icons/icon32.png" alt="">Recipe to Mealie</header><p id="s">Importing…</p><footer><small><a href="#" id="o">Options</a></small></footer>
 <script src="popup.js"></script></body></html>

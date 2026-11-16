@@ -71,7 +71,7 @@ async function uploadImage(c, slug, url, tabId) {
 
 async function doImport(tabId, pageUrl) {
   const c = await cfg();
-  if (!c.token) throw new Error('No API token set. Open the options page.');
+  if (!c.token || !c.base) throw new Error('Mealie URL or API token not set. Open the options page.');
   const [{ result: p }] = await chrome.scripting.executeScript({ target: { tabId }, func: pageExtract });
   let slug, via, imageWarn;
   const errors = [];
