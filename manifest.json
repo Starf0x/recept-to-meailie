@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Recipe to Mealie",
+  "version": "0.0.72",
+  "description": "Send the recipe on the current tab to Mealie with one click.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": { "default_popup": "popup.html", "default_title": "Recipe to Mealie" },
+  "options_page": "options.html",
+  "background": { "service_worker": "background.js" }
+}

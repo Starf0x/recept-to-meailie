@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Recipe to Mealie – options</title>
+<style>body{font:14px system-ui;max-width:520px;margin:24px}label{display:block;margin:12px 0 4px}input[type=text],input[type=password]{width:100%;padding:6px}</style>
+<body><h2>Recipe to Mealie</h2>
+<label>Mealie URL</label><input type="text" id="base" placeholder="https://mealie.example.com">
+<label>Group (slug)</label><input type="text" id="group" placeholder="home">
+<label>API-token (Mealie → Profile → API Tokens)</label><input type="password" id="token">
+<label><input type="checkbox" id="tools"> Remove kitchen tools (baking dish, hand blender, …) from ingredients</label>
+<label>Extra kitchen tool words (comma-separated)</label><input type="text" id="extra">
+<p><button id="save">Save</button> <button id="test">Test connection</button> <span id="msg"></span></p>
+<script src="options.js"></script></body></html>
